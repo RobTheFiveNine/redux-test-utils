@@ -1,11 +1,4 @@
 src
-
 .eslintrc
-
 .gitignore
-
 .npmignore
-
-.idea
-
-wallaby.js
