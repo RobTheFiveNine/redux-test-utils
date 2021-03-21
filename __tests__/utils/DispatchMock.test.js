@@ -1,4 +1,4 @@
-import { createMockDispatch } from '../DispatchMock';
+import { createMockDispatch } from '../../src/utils/DispatchMock';
 
 describe('DispatchMock', () => {
   describe('getActions', () => {

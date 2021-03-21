@@ -1,6 +1,6 @@
-import { createMockStore, createMockDispatch } from '../index';
-import * as StoreMock from '../utils/StoreMock';
-import * as DispatchMock from '../utils/DispatchMock';
+import { createMockStore, createMockDispatch } from '../src/index';
+import * as StoreMock from '../src/utils/StoreMock';
+import * as DispatchMock from '../src/utils/DispatchMock';
 
 describe('createStore', () => {
   it('works', () => {

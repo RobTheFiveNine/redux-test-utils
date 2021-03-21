@@ -1,5 +1,5 @@
-import { emptyStore, createMockStore } from '../StoreMock';
-import * as DispatchMock from '../DispatchMock';
+import { emptyStore, createMockStore } from '../../src/utils/StoreMock';
+import * as DispatchMock from '../../src/utils/DispatchMock';
 
 describe('StoreMock', () => {
   describe('emptyStore', () => {
