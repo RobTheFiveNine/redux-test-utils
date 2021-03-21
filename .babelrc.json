@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "src/__tests__",
+    "src/utils/__tests__"
+  ],
+  "presets": [
+    "@babel/preset-env"
+  ]
+}

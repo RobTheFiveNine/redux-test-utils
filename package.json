@@ -33,6 +33,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "build": "yarn clean && babel src --out-dir dist",
     "prepublish": "yarn build",
     "test": "jest"
   },
@@ -41,11 +42,6 @@
       "type": "MIT"
     }
   ],
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
