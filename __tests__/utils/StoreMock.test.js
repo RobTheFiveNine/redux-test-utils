@@ -14,6 +14,7 @@ describe('StoreMock', () => {
     describe('subscribe', () => {
       it('is defined', () => {
         expect(typeof store.subscribe).toBe('function');
+        expect(() => store.subscribe()).not.toThrow();
       });
     });
   });
@@ -36,6 +37,7 @@ describe('StoreMock', () => {
     describe('subscribe', () => {
       it('is defined', () => {
         expect(typeof createMockStore().subscribe).toBe('function');
+        expect(() => createMockStore().subscribe()).not.toThrow();
       });
     });
 

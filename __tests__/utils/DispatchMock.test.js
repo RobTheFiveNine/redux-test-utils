@@ -114,6 +114,8 @@ describe('DispatchMock', () => {
         const action = {
           type: 'not dispatched action type',
         };
+
+        mock.dispatch({ type: 'a different action' });
         expect(mock.isActionDispatched(action)).toBe(false);
       });
     });
