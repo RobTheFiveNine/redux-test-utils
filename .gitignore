@@ -1,4 +1,6 @@
-node_modules
-dist
-.idea
-npm-debug.log
+# Build fragments
+node_modules/
+dist/
+
+# Test fragments
+coverage/
