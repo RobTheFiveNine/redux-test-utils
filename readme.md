@@ -43,6 +43,34 @@ describe('example', () => {
 });
 ```
 
+### Testing Asynchronouse Thunks
+```js
+import { createMockStore } from '@robthefivenine/redux-test-utils';
+
+describe('example', () => {
+  it('works', async () => {
+    const state = 'state';
+    const store = createMockStore(state);
+    const action = {
+      type: 'type',
+      data: 'data'
+    };
+
+    function actionCreator() {
+      return async function(dispatch) {
+        return dispatch(action);
+      }
+    }
+
+    await store.dispatch(actionCreator());
+      
+    expect(store.getAction(action.type)).toEqual(action);
+    expect(store.isActionDispatched(action)).toBe(true);
+    expect(store.isActionTypeDispatched(action.type)).toBe(true);
+  });
+});
+```
+
 ### createMockDispatch
 
 ```js
